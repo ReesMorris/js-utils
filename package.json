@@ -4,6 +4,8 @@
   "description": "A collection of single-file utility scripts that I tend to use in my day-to-day projects",
   "main": "index.js",
   "scripts": {
+    "prettier": "prettier --ignore-path .prettierignore \"**/*.+(js|json|ts|tsx)\"",
+    "format": "npm run prettier -- --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ReesMorris/js-utils/issues"
   },
-  "homepage": "https://github.com/ReesMorris/js-utils#readme"
+  "homepage": "https://github.com/ReesMorris/js-utils#readme",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
 }

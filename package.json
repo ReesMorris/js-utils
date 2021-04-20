@@ -1,0 +1,20 @@
+{
+  "name": "js-utils",
+  "version": "1.0.0",
+  "description": "A collection of single-file utility scripts that I tend to use in my day-to-day projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReesMorris/js-utils.git"
+  },
+  "keywords": [],
+  "author": "Rees Morris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ReesMorris/js-utils/issues"
+  },
+  "homepage": "https://github.com/ReesMorris/js-utils#readme"
+}

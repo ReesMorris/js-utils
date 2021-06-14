@@ -1,8 +1,6 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
-const partition = (array: any[], condition: (e?: any) => boolean): any[][] => {
-  const pass: any[] = [];
-  const fail: any[] = [];
+const partition = <T>(array: T[], condition: (e: T) => boolean): T[][] => {
+  const pass: T[] = [];
+  const fail: T[] = [];
 
   array.forEach(e => (condition(e) ? pass : fail).push(e));
 

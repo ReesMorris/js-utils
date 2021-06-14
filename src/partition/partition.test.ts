@@ -20,6 +20,17 @@ test('returns correct items in each array', () => {
   expect(nums).toStrictEqual([2, 3, 5]);
 });
 
+test('returns correct items from an array of objects', () => {
+  const arr = [
+    { first: 'John', last: 'Smith' },
+    { first: 'Jane', last: 'Doe' },
+    { first: 'Amy', last: 'Pond' }
+  ];
+  const [withJ, withoutJ] = partition(arr, e => e.first[0] === 'J');
+  expect(withJ).toStrictEqual([arr[0], arr[1]]);
+  expect(withoutJ).toStrictEqual([arr[2]]);
+});
+
 test('returns all passing items', () => {
   const nums = [1, 2, 3, 4, 5];
   const [lt, gt] = partition(nums, e => e < 10);
